@@ -1,0 +1,129 @@
+/* CSS Starts here... */
+
+/* Tag CSS Implementation */
+
+/* Implementing the CSS to whole body. Here giving margin 0 to full body, displaying type as flex to show the content as column type and given background from unsplash randome link with gradient overlay. */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(rgba(19, 19, 19, 0.8), rgba(19, 39, 27, 0.8)), url("https://source.unsplash.com/random/1920x1080/?nature"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: url("https://source.unsplash.com/random/1920x1080/?nature"); */
+    color: white;
+    
+}
+
+/* Class CSS Implementation */
+
+/* Here implmenting CSS to Clock Heading, transforming the text to uppercase and giving some space between letters and giving the size to font and aligning the heading to center. */
+.clockHeading {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Implementing CSS to Clock. First making display type as flex */
+.clock {
+    display: flex;
+}
+
+/* 2nd setting clock div position as relative. It changes the position of the element relative to the parent element and relative to itself and where it would usually be in the regular document flow of the page. */
+.clock div {
+    margin: 1rem;
+    position: relative;
+}
+
+/* Implementing CSS to clock span for designing clock hours, minutes, and seconds time and texts. */
+.clock span {
+    display: flex;
+    width: 7rem;
+    height: 5rem;
+    background: black;
+    color: white;
+    opacity: .8;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 174, 255, 0.3);
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Implementing CSS to clock texts only. */
+.clock .text {
+    height: 2rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background: rgb(2, 44, 71);
+    opacity: .8;
+}
+
+/* Class and ID CSS Implementation */
+
+/* Implementing CSS to clock amPm to look something diffrent. */
+.clock #amPm {
+    bottom: 0;
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    background: rgb(0, 141, 12);
+}
+
+/* Media Queries Implementation*/
+/* Here Implementing some media quries to look good on mobile phone, so basically this project is mobile friendly. Means Responsive */
+@media only screen and (max-width: 600px) {
+    .clockHeading {
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .clock div {
+        margin: .3rem;
+        position: relative;
+    }
+    
+    .clock span {
+        display: flex;
+        width: 5rem;
+        height: 3rem;
+        background: black;
+        color: white;
+        opacity: .8;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 174, 255, 0.3);
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .clock .text {
+        height: 1rem;
+        font-size: .6rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        background: rgb(2, 44, 71);
+        opacity: .8;
+    }
+    
+    .clock #amPm {
+        bottom: 0;
+        position: absolute;
+        width: 3rem;
+        height: 1rem;
+        font-size: .5rem;
+        letter-spacing: .2rem;
+        background: rgb(0, 141, 12);
+    }
+    
+  }
